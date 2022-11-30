@@ -1,0 +1,276 @@
+#ternos{
+    padding:100px 0 30px 10%;
+}
+
+.comprar-terno{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.imgs-pagina{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.img{
+    height: 616px;
+    padding-right: 9px;
+}
+
+.img_m img{
+    height:20%; 
+  
+}
+
+.img1, .img2, .img3, .img4{
+    padding-bottom: 2.5px;
+}
+
+.img2, .img3, .img4, .img5{
+    padding-top: 2.5px;
+}
+
+.img_m{
+    display: flex;
+    flex-direction: column;
+    height:616px;
+}
+
+.nome-terno{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 30px;
+}
+
+.info-terno{
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;    
+}
+
+.codigo{
+    color: rgb(145, 145, 145);
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.valor_I{
+    padding-top: 20px;
+}
+
+.valores{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.desconto{
+    width: 50px;
+}
+
+.vezes{
+    color: rgb(145, 145, 145);
+    font-size: 14px;
+}
+
+hr{
+    margin-top: 20px;
+}
+
+.tamanho{
+    padding: 10px 0 5px;
+}
+
+.escolha_t{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.medidas-input, .coracao-input{
+    display: none;
+}
+.medidas-input:checked + .pp{
+    background-color: rgb(117, 126, 255) ;
+    color: #fdfdfd;
+}
+.medidas-input:checked + .p{
+    background-color: rgb(117, 126, 255) ;
+    color: #fdfdfd;
+}
+.medidas-input:checked + .m{
+    background-color: rgb(117, 126, 255) ;
+    color: #fdfdfd;
+}
+.medidas-input:checked + .g{
+    background-color: rgb(117, 126, 255) ;
+    color: #fdfdfd;
+}
+.medidas-input:checked + .gg{
+    background-color: rgb(117, 126, 255) ;
+    color: #fdfdfd;
+}
+
+.pp, .p, .m, .g, .gg{
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .2), -1px -1px 5px rgba(0, 0, 0, .2);
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.p{
+    padding:10px 15.345px;
+}
+
+.m{
+    padding:10px 12.5px;
+}
+
+.g{
+    padding:10px 13.95px;
+}
+
+.gg{
+    padding:10px 7.215px;
+}
+.icon_t{
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+}
+
+.frase_t{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    color: rgb(0, 0, 255);
+    font-size: 16px;
+}
+
+.btn-comprar button{
+    color: #fdfdfd;
+    background-color: black;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0px 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px;
+    height: 35px;
+}
+
+.icon_coracao{
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .2), -1px -1px 5px rgba(0, 0, 0, .2);
+    padding: 6px 7px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.icon_coracao i{
+    color: rgb(145, 145, 145);
+    font-size: 25px;
+}
+
+.coracao-input:checked + .icon_coracao{
+    background-color: black;
+    color: white;
+}
+
+.coracao-input:checked + .icon_coracao i{
+    color: white;
+}
+
+.frete{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: rgb(0, 0, 255);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.text-frete{
+    display: flex;
+    gap: 5px;
+}
+
+.descricao{
+    padding-top: 15px;
+    color: rgb(145, 145, 145);
+    font-size: 13px;
+    width: 260px;
+}
+
+.descricao h5{
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:950px) {
+    #ternos{
+        padding-top: 130px;   
+    }
+}
+
+@media screen and (max-width:900px) {
+    #ternos{
+        padding-left: 0;
+    }
+
+    .imgs-pagina{
+        padding: 0 20px;
+    }
+
+    .img_m img{
+        width: 20%;
+        height: auto;
+        padding-bottom: 0;
+    }
+    .img_m{
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+    }
+    .img{
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .img1, .img2, .img3, .img4{
+        padding-right: 2.5px;
+    }
+
+    .img2, .img3, .img4, .img5{
+        padding-left: 2.5px;
+    }
+
+    .comprar-terno{
+        justify-content: center;
+    }
+
+    .info-terno{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    br{
+        display: none;
+    }
+
+    .descricao{
+        width: 50%;
+    }
+}
